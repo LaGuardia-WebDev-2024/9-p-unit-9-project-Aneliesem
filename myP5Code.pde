@@ -12,9 +12,23 @@ draw = function(){
   triangle(200, 104, 280, 280, 120, 280);
   fill(255, 255, 255);
   
-  if (answer == 1) {
-    text("YOUR", 176, 200);
-    text("MESSAGE", 159, 229); 
+ if (answer == 1) {
+    text("YES", 176, 200); // Answer if the result is 1
+  } 
+  
+  else if (answer == 2) {
+    text("NO", 176, 200); // Answer if the result is 2
+  } 
+  
+  else if (answer == 3) {
+    text("MAYBE", 165, 200); // Answer if the result is 3
+  } 
+  
+  else if (answer == 4) {
+    text("ASK AGAIN", 165, 200); // Answer if the result is 4
+  } else {
+    
+    text("DEFINITELY", 165, 200); // Answer if the result is 5
   }
   
 };
