@@ -12,6 +12,7 @@ draw = function(){
   triangle(200, 104, 280, 280, 120, 280);
   fill(255, 255, 255);
   
+  
  if (answer == 1) {
     text("YES", 176, 200); // Answer if the result is 1
   } 
@@ -33,8 +34,13 @@ draw = function(){
   }
   
   else if (answer == 6) {
-  text ("PRESS",170, 200); // Answer if the result is 6
-  text("b", 175, 215); }
+  text ("DONT",170, 200); // Answer if the result is 6
+  text("ASK AGAIN", 175, 215); }
+
+if(mousePressed){
+fill(random(0,255), random(0,255), random(0,255));
+text("🤑", random(-100,600), random(-100,500))
+}
 
 };
   
@@ -42,3 +48,4 @@ draw = function(){
 mouseClicked = function(){
   answer = round(random(1, 6));
 };
+
