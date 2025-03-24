@@ -1,13 +1,13 @@
 <!-- Unit 9 Project
 Requirements
-[  ] Add if() statement
-[  ] Add random(.., ..)
-[  ] Add Custom Function
-[  ] Three new HTML elements/CSS Declarations
+[ yes ] Add if() statement
+[  yes] Add random(.., ..)
+[  yes] Add Custom Function
+[ yes ] Three new HTML elements/CSS Declarations
 
 Select ONE Additional 
-[ no ] Feature 1 - Include mouseX and mouseY
-[ no ] Feature 2 - Include KeyPressed feature
+[ yes ] Feature 1 - Include mouseX and mouseY
+[ yes ] Feature 2 - Include KeyPressed feature
 [ no ] Feature 3 - Include Animation 
 [ no ] Feature 4 - Include Logical Operators && or || 
 -->
@@ -21,11 +21,27 @@ Select ONE Additional
     <title>Unit 9 Project</title>
     <link href="style.css" rel="stylesheet" type="text/css" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/processing.js/1.6.6/processing.min.js"></script>
-    <style></style>
+    <style>
+       h1 {
+              color: rgb(232,143,161,255);
+              font-size: 50px;
+            }
+      p {
+        color: rgb(292,193,171,285);
+        font-size: 20px;
+      }
+      
+       h2 {
+              color: rgb(332,243,161,255);
+              font-size: 30px;
+            }
+    </style>
   </head>
 
   <body>
     <h1>Magic 8 Ball</h1>
+    <p>Click to get an answer</p>
+    <h2>Answer: </h2>
     <canvas id="myCanvas" data-processing-sources="myP5Code.pde"> </canvas>
   </body>
 </html>
