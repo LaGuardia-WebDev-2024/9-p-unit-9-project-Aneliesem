@@ -42,6 +42,22 @@ fill(random(0,255), random(0,255), random(0,255));
 text("🤑", random(-100,600), random(-100,500))
 }
 
+
+  // drawFish function 
+  drawFish(300, 300, color(193, 183, 238)); 
+};
+
+// Function to draw the fish
+var drawFish = function(fishX, fishY, fishColor) {
+  fill(fishColor);
+  strokeWeight(1);
+  stroke(0, 0, 0);
+  ellipse(fishX + 20, fishY, 13, 25); // Tail
+  ellipse(fishX, fishY, 40, 20); // Body
+  fill(0, 0, 0);
+  ellipse(fishX - 10, fishY - 2, 3, 5); // Eye
+  fill(226, 90, 76);
+  ellipse(fishX - 12, fishY + 4, 10, 3); // Mouth
 };
   
 
